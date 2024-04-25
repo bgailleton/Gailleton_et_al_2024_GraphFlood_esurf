@@ -1,0 +1,15 @@
+include AUTHORS.rst
+include CONTRIBUTING.rst
+include HISTORY.rst
+include LICENSE
+include README.rst
+include data/config.json
+recursive-exclude * *.json
+recursive-include scabbard/data *.json
+recursive-include scabbard/steenbok *.cu
+
+recursive-include tests *
+recursive-exclude * __pycache__
+recursive-exclude * *.py[co]
+
+recursive-include docs *.rst conf.py Makefile make.bat *.jpg *.png *.gif *.json
