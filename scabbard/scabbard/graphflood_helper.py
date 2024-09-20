@@ -200,11 +200,12 @@ class ModelHelper:
 	@property
 	def P(self):
 		return self._P
+
 	@P.setter
 	def P(self,val):
 		self._P = val
 		if(self.gf is not None):
-			self.gf.set_precipitations(P)
+			self.gf.set_precipitations(val)
 
 	@property
 	def hw(self):
